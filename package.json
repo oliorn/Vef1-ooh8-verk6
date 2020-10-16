@@ -1,0 +1,26 @@
+{
+  "name": "vef6",
+  "version": "1.0.0",
+  "description": "vefforitunverk6",
+  "main": "index.js",
+
+
+  "scripts": {
+    "lint-css": "stylelint styles.css",
+    "lint-scss": "stylelint styles.scss --syntax scss",
+    "sass-nomap": "node-sass styles.scss styles.css",
+    "sass": "node-sass styles.scss styles.css",
+    "sass-watch": "node-sass --source-map-embed --watch * .scss --recursive styles.css",
+    "browser-sync": "browser-sync start --server",
+    "dev": "concurrently npm:sass npm:browser-sync",
+  },
+
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "concurrently": "^5.3.0",
+    "node-sass": "^4.14.1",
+    "stylelint": "^13.7.2",
+  }
+}

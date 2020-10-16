@@ -1,0 +1,18 @@
+// Sækja allt úr styles/
+
+@import "styles/config";
+
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+@import "styles/global";
+
+@import "styles/grid";
+
+@import "styles/header";
+
+@import "styles/events";
+
+@import "styles/books";
